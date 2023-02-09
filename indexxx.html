@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Starry Eyes</title>
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/footer.css">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <header>
+  <a href ="#" class="info_logo">Starry Eyes</a>
+  <ul>
+    <li><a href ="indexxx.html" class="active">Home</a></li>
+    <li><a href="contact.html"class="active">Contact</a></li>
+    <li><a href="dailynews.html"class="active">Daily News</a></li>
+    <li><a href="interestingbooks.html"class="active">Interesting Books</a></li>
+  </ul>
+  </header>
+<section>
+<img src="img/index/stars.png" id="stars">
+<img src="img/index/moon.png" id="moon">
+<img src="img/index/mountains_behind.png" id="mountains_behind">
+<h2 id="text">Starry Eyes</h2>
+
+<a href="#sec"id="btn">About Us</a>
+<img src="img/index/mountains_front.png" id="mountains_front">
+</nav>
+
+</section>
+
+<div class="sec" id="sec">
+  
+  <h2>About Us</h2>
+  <p>Welcome to our astronomy club, Starry Eyes.Our goal was to make something
+  that would unite people all around the world and have something in common.
+<br><br>With the making of our club,it makes us happy to see that thousands
+of people are connecting through us and enjoying our club.<br><br>
+Starry Eyes is a safe space for people who look at the stars every night and
+eyes light up when a planet is mentioned.So if you are one of those people and 
+need a new hobby, Sign up for free and enjoy daily news and book recommandations and to meet new people who are of the same interests as you<br><br>Even though some people may not share the qualities of learning astrophysics,some people(like us)are just interested in knowing stuff withput actually studying them.And our wish was to provide that information<br><br>
+</p>
+</div>
+
+
+</div>
+</section>
+<script>
+  let stars = document.getElementById('stars');
+  let moon = document.getElementById('moon');
+  let mountains_behind = document.getElementById('mountains_behind');
+  let text = document.getElementById('text');
+  let btn = document.getElementById('btn');
+  let mountains_front = document.getElementById('mountains_front');
+
+  window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    stars.style.left = value * 0.25 + 'px';
+    moon.style.top = value * 1.05 + 'px';
+    mountains_behind.style.top = value * 0.5 + 'px';
+    mountains_front.style.top = value * 0 + 'px';
+
+  })
+
+  </script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
